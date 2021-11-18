@@ -1,1 +1,1 @@
-# calculadora-py-lab
+La Idea de este espacio es aprender python, vamos a ver que sale xd.
