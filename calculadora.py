@@ -1,3 +1,4 @@
+import matesBasicas as doMath
 
 print("Ingrese la operacion que desea realizar: ")
 print("1. +")
@@ -22,18 +23,14 @@ while i > 2:
     else:
         numero2 = int(aux2)
 
-    ans = 0
-
-    if operacion == "1":
-        ans = (numero1 + numero2)
+    ans = doMath.operate(numero1, numero2,operacion)
+    
+    if operacion == "1":    
         print("La suma es: ", ans)
     if operacion == "2":
-        ans = (numero1 - numero2)
         print("La resta es: ", ans)
     if operacion == "3":
-        ans = (numero1 * numero2)
         print("La multiplicacion es: ", ans)
     if operacion == "4":
-        ans = (numero1 / numero2)
         print("El coiciente es: ",ans,  "Y su resto es: ", (numero1 % numero2))
         
