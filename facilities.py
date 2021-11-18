@@ -19,7 +19,7 @@ def inAndProcess(ans):
         return aux
 
 def doBasicOperations(ans):
-    desplegarMenuOperacionesBasicas()
+    showBasicOperations()
     operator = input("Ingrese Operacion: ")
     
     num1 = inAndProcess(ans)
@@ -30,25 +30,39 @@ def doBasicOperations(ans):
     return ans
 
 
+def doAnalisisOperations():
+    showAnalisisOperations()
+    #TODO: implement
+    doMath.analisisOperations()
+
+def doImaginaryOperations():
+    showImaginaryOperations()
+    #TODO: implement
+    doMath.imaginaryOperations()
+
+def doAlgebraicOperations():
+    showIAlgebraOperations()
+    #TODO: implement
+    doMath.algebraicOperations()
 
 ###################
 #  Graphic stuff  #
 ###################
 
-def desplegarMenuPrincipal():
+def showMainMenu():
     print("+--------------------------------------------------+")
     print("|                    calcuTHON                     |")
     print("+--------------------------------------------------+")
     print("|                                                  +")
     print("| Ingrese el tipo de operacion que desea realizar: |")
     print("|   1. Basicas - (+ - * / mod)                     |")
-    print("|   2. Complejas - (Proximamente)                  |") # (Lim, Derivada, Integral)
+    print("|   2. Analisis - (Proximamente)                   |") # (Lim, Derivada, Integral)
     print("|   3. Imaginarias - (Proximamente)                |")
     print("|   4. Algebraicas - (Proximamente)                |")
     print("|                                                  +")
     print("+--------------------------------------------------+")
     
-def desplegarMenuOperacionesBasicas():
+def showBasicOperations():
     print("+--------------------------------------------------+")
     print("|                    calcuTHON                     |")
     print("+--------------------------------------------------+")
@@ -61,10 +75,41 @@ def desplegarMenuOperacionesBasicas():
     print("|                                                  +")
     print("+--------------------------------------------------+")
 
+def showAnalisisOperations():
+    print("+--------------------------------------------------+")
+    print("|                    calcuTHON                     |")
+    print("+--------------------------------------------------+")
+    print("|                                                  +")
+    print("| Ingrese la operacion que desea realizar:         |")
+    print("|   1. Limite                                      |")
+    print("|   2. Derivada                                    |") # (Lim, Derivada, Integral)
+    print("|   3. Integral                                    |")
+    print("|                                                  +")
+    print("+--------------------------------------------------+")
 
+def showImaginaryOperations():
+    print("+--------------------------------------------------+")
+    print("|                    calcuTHON                     |")
+    print("+--------------------------------------------------+")
+    print("|                                                  +")
+    print("| Ingrese la operacion que desea realizar:         |")
+    print("|   1. ALGO                                        |")
+    print("|   2. ALGO                                        |") # (Lim, Derivada, Integral)
+    print("|   3. ALGO                                        |")
+    print("|                                                  +")
+    print("+--------------------------------------------------+")
 
-
-
+def showIAlgebraOperations():
+    print("+--------------------------------------------------+")
+    print("|                    calcuTHON                     |")
+    print("+--------------------------------------------------+")
+    print("|                                                  +")
+    print("| Ingrese la operacion que desea realizar:         |")
+    print("|   1. ALGO                                        |")
+    print("|   2. ALGO                                        |") # (Lim, Derivada, Integral)
+    print("|   3. ALGO                                        |")
+    print("|                                                  +")
+    print("+--------------------------------------------------+")
 
 
 

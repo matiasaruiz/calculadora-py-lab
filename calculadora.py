@@ -1,31 +1,31 @@
 import matesBasicas as doMath
 import facilities as makeItEasy
+import sys
 
-print("Ingrese la operacion que desea realizar: ")
-print("1. +")
-print("2. -")
-print("3. *")
-print("4. /")
+
+makeItEasy.desplegarMenuPrincipal()
+tipo =input("Ingrese el tipo de operacion: ")
 
 i= 1000
 ans = 0
 
-while i > 2:
-    operacion = input("Ingrese Operacion: ")
-    
-    numero1 = makeItEasy.inAndProcess(ans)
-    numero2 = makeItEasy.inAndProcess(ans)
-    print(numero1, numero2)
 
-    ans = doMath.operate(numero1, numero2,operacion)
-    print(ans)
+if tipo == "1":
+    while i > 2:
+       ans = makeItEasy.doBasicOperations(ans)
+if tipo == "2":
+    while i > 2:
+        makeItEasy.doAnalisisOperations()
+if tipo == "3":
+    while i > 2:
+        makeItEasy.doImaginaryOperations()
+if tipo == "4":
+    while i > 2:
+        makeItEasy.doAlgebraicOperations()
+if tipo == "5":
+    print("chau xd")
+    sys.exit(0)
 
-    if operacion == "1":    
-        print("La suma es: ", ans)
-    if operacion == "2":
-        print("La resta es: ", ans)
-    if operacion == "3":
-        print("La multiplicacion es: ", ans)
-    if operacion == "4":
-        print("El coiciente es: ",ans,  "Y su resto es: ", (numero1 % numero2))
+
+
         
